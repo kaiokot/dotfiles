@@ -4,6 +4,11 @@
 	
 [alias]    
     me = config user.name
+    
+    ci = commit
+
+    # commit with message without ""
+    cim = "!f() { git commit -m \"$*\"; }; f"
 
     # Less verbose status
     st = status -sb
@@ -31,6 +36,9 @@
 
     # Syncronize local branchs with remote
     fe = fetch origin
+
+    # fetch all
+    fea = fetch --all
 
     # Fork a branch
     fork = checkout -b
