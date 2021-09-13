@@ -1,17 +1,26 @@
 #!/usr/bin/env bash
 
-# Easier navigation: .., ..., ...., ....., ~ and -
-alias ..="cd .."
-alias ...="cd ../.."
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+alias ~='cd ~'
+alias -- -='cd -'
+alias 1='cd -'
+alias 2='cd -2'
+alias 3='cd -3'
+alias 4='cd -4'
+alias 5='cd -5'
 alias cd..="cd .."
-alias ~="cd ~" # `cd` is probably faster to type though
-alias -- -="cd -"
 
 # Shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
+alias doc='cd ~/Documents'
 alias p="cd ~/projects"
 alias g="git"
 alias c="code" #vscode alias
@@ -24,14 +33,11 @@ alias please='sudo '
 alias pls='sudo ' 
 
 
-# URL-encode strings
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
-
-# find . -name .gitattributes | map dirname
-alias map="xargs -n1"
-
-
+# Typos
+alias :q='exit'
+alias help='man'
+alias quit='exit'
 
 
 # Get week number
@@ -40,3 +46,9 @@ alias week='date +%V'
 # Get External IP / Internet Speed
 alias myip="curl https://ipinfo.io/json" # or /ip for plain-text ip
 alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
+
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# find . -name .gitattributes | map dirname
+alias map="xargs -n1"
