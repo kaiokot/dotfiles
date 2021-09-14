@@ -25,6 +25,8 @@ alias doc='cd ~/Documents'
 alias p="cd ~/projects"
 alias g="git"
 alias c="code" #vscode alias
+alias d="docker" 
+
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
