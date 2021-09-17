@@ -40,6 +40,9 @@
     # fetch all
     fea = fetch --all
 
+    # git fetch all
+    ba = branch--all
+
     # Fork a branch
     fork = checkout -b
 
